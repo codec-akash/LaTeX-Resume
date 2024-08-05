@@ -1,0 +1,166 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \vspace{2pt}\item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNormal}[1]{
+  \vspace{2pt}\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/crickash/}{\Large Akash Dubey}} & Email : \href{mailto:akashrdubey19@gmail.com}{akashrdubey19@gmail.com}\\
+  \href{https://www.linkedin.com/in/crickash/}{LinkedIn, }\href{https://github.com/codec-akash}{Github, }\href{https://stackoverflow.com/users/15859365/akash-dubey}{Stack Overflow} & Mobile : 8422022076 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Twid - Pay with rewards}{Bangalore, IN}
+      {Software Engineer - Flutter}{Aug 2023 - Present}
+      \resumeItemListStart
+        \resumeItemNormal
+          {Architect the front-end of the complete UPI module SDK using \textbf{Clean Architecture}.}
+        \resumeItemNormal
+          {Added \textbf{UPI processes} with UI implementation for Pay with UPI id, phone number, Account transfer, self transfer, mandate and UDIR dispute with Juspay SDk.}
+        \resumeItemNormal
+          {\textbf{Custom Paint animations} for Transaction status screen after a payment for seamless user experience.}
+        \resumeItemNormal
+          {Handled \textbf{Root Check} and fixed memory leak from the app which resulted in the seamless process of Audit approval for \textbf{stability and security }of the app}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Akudo}{Bangalor, IN}
+      {Software Developer - Flutter}{Jan 2022 - July 2027}
+      \resumeItemListStart
+        \resumeItemNormal
+          {Implemented \textbf{UPI integration from NPCI} on PPI, enabling users to seamlessly conduct UPI transactions, track transaction status, and access transaction history.}
+        \resumeItemNormal
+          {Boosted app \textbf{loading speed by 65\%} through parallel BLoC calls and data holders, enabling faster home screen refresh and enhancing user experience.}
+        \resumeItemNormal
+          {Integrated \textbf{mobile recharge} with automated plan expiration reminders and \textbf{real-time recharge order status using sockets}. Implemented comprehensive \textbf{search functionality across all JSON keys} for efficient recharge plan searching}
+        \resumeItemNormal
+          {Implemented \textbf{video KYC} with a non-linear flow and 
+          \textbf{document blur detection using TensorFlow ML Kit}. Added a paywall feature with direct debit functionality through wallet.}
+        \resumeItemNormal
+          {Added \textbf{Referral Program} in which user can send a \textbf{Dynamic Link} to help onboard another user and earn rewards. Implemented user tracking for the app journey for milestone rewards}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Akudo - Intern}{Bangalore, IN}
+      {Flutter Developer Intern}{July 2021 - Jan 2022}
+      \resumeItemListStart
+        \resumeItem{User Retention/Acquisition}
+          {Integrated SDKs such as Mixpanel, MoEngage, and AppsFlyer to enhance user analytics, engagement, and tracking, providing valuable insights for business growth and user retention.}
+        \resumeItem{Log Collection}
+          {Implemented Sentry for log collection , enabling efficient monitoring and issue resolution, ensuring stable and reliable app performance.}
+        \resumeItem{Design Revamp}
+          {Performed a comprehensive UI/UX redesign of the entire app, resulting in a substantial improvement in user experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Tricket App}
+      {A Cricket score guess app with P2P support for leaderboard and winnings. The score was guessed in the spell of 4-5 overs}{\href{https://apps.apple.com/in/app/tricket-analyse-win/id1667156965}{App Store, } {\href{https://play.google.com/store/apps/details?id=in.tricket.tricketApp&hl=en_IN}{Play Store}}}
+    \resumeSubItem{Basket Ball Counter}
+      {Designed a basketball net which is able to count the number of successful baskets done using arduino and the score was shown in app and basket}{\href{https://www.hackster.io/171442/basketball-counting-machine-7a9907}{Article}}
+    \resumeSubItem{Universal Clipboard}
+      {Created a Clipboard management dashboard which syncs the device clipboard over other platform to give a apple ecosystem usage for android. tech - Flutter, Firebase}{\href{https://github.com/codec-akash/clipy}{Clipy}}
+    \resumeSubItem{Resume}
+      {have build this resume using LaTeX}{\href{https://github.com/codec-akash/clipy}{Clipy}}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Dart, Java, Python, JS, SQL, Rust}
+     \hfill
+     \textbf{Technologies}{: Flutter, Android Studio, Firebase, GraphQl}
+   }
+ \resumeSubHeadingListEnd
+
+ %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manav Rachna University}{Delhi NCR}
+      {BTech CSE}{2018 -- 201}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
